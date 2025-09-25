@@ -1,0 +1,46 @@
+[
+  {
+    "Expires": "2023-03-09T07:46:17Z",
+    "Name": "CtxsClientDetectionDone",
+    "Value": "true",
+    "Domain": "${host}",
+    "Path": "${path}",
+    "IsHttpOnly": false,
+    "SameSite": 1,
+    "IsSecure": true,
+    "IsSession": false
+  },
+  {
+    "Expires": "0001-01-01T00:00:00",
+    "Name": "CtxsHasUpgradeBeenShown",
+    "Value": "true",
+    "Domain": "${host}",
+    "Path": "${path}",
+    "IsHttpOnly": false,
+    "SameSite": 1,
+    "IsSecure": true,
+    "IsSession": true
+  },
+  {
+    "Expires": "0001-01-01T00:00:00",
+    "Name": "isGatewaySession",
+    "Value": "True",
+    "Domain": "${host}",
+    "Path": "${path}",
+    "IsHttpOnly": false,
+    "SameSite": 1,
+    "IsSecure": true,
+    "IsSession": true
+  },
+  {
+    "Expires": "2023-08-19T10:33:54Z",
+    "Name": "CtxsUserPreferredClient",
+    "Value": "Native",
+    "Domain": "${host}",
+    "Path": "${path}",
+    "IsHttpOnly": false,
+    "SameSite": 1,
+    "IsSecure": true,
+    "IsSession": false
+  }
+]

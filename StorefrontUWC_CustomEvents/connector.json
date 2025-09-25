@@ -1,0 +1,51 @@
+{
+  "Version": "0.1",
+  "Arguments": [
+    {
+      "Key": "--url",
+      "IsRequired": true,
+      "IsHidden": false
+    },
+    {
+      "Key": "--scripts-path",
+      "IsRequired": true,
+      "IsHidden": false
+    },
+    {
+      "Key": "--username",
+      "IsRequired": false,
+      "IsHidden": false
+    },
+    {
+      "Key": "--password",
+      "IsRequired": true,
+      "IsHidden": true
+    },
+    {
+      "Key": "--resource",
+      "IsRequired": false,
+      "IsHidden": false
+    },
+    {
+      "Key": "--timeout",
+      "IsRequired": false,
+      "IsHidden": false
+    },
+    {
+      "Key": "--sessionid",
+      "IsRequired": true,
+      "IsHidden": false
+    },
+    {
+      "Key": "--apikey",
+      "IsRequired": true,
+      "IsHidden": true
+    },
+    {
+      "Key": "--applianceurl",
+      "IsRequired": true,
+      "IsHidden": false
+    }
+  ],
+  "Cookies": []
+}
