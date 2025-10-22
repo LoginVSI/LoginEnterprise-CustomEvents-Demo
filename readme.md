@@ -143,16 +143,16 @@ This script bridges the gap between UWC's stdin-based parameter passing and the 
 Below is an example connection command line for your test configuration. Your actual implementation will vary based on your environment:
 
 ```bash
-"C:\Program Files\Login VSI\Universal Web Connector\UniversalWebConnector.exe" --url "{host}" --scripts-path "C:\path\to\StorefrontUWC_CustomEvents" --username "{domain}\\{username}" --password "{password}" --resource "{resource}" --sessionid "{sessionId}" --apikey "{secure1}" --applianceurl "https://your-appliance.domain.com" --timeout 300
+"C:\Program Files\Login VSI\Universal Web Connector\UniversalWebConnector.exe" --url "{host}" --scripts-path "C:\path\to\StorefrontUWC_CustomEvents" --username "{domain}\\{username}" --password "{password}" --resource "{resource}" --sessionid "{sessionId}" --apikey "{securecustom1}" --applianceurl "https://your-appliance.domain.com" --timeout 300
 ```
 
 **Parameter Notes:**
 - `{sessionId}`: Automatically provided by Login Enterprise v6.2+ when the test runs
-- `{secure1}`: In this example, we're using the [Secured Custom Fields](https://docs.loginvsi.com/login-enterprise/6.3/managing-virtual-user-accounts#id-(6.3)ManagingVirtualUserAccounts-secured-custom-fields-optionalSecuredCustomFields(Optional)) feature to store the API key. This allows the API token to be passed as a variable through the connection command line.
+- `{securecustom1}`: In this example, we're using the [Secured Custom Fields](https://docs.loginvsi.com/login-enterprise/6.3/managing-virtual-user-accounts#id-(6.3)ManagingVirtualUserAccounts-secured-custom-fields-optionalSecuredCustomFields(Optional)) feature to store the API key. This allows the API token to be passed as a variable through the connection command line.
 - Replace paths and URLs with your environment specifics
 --First, generate an API token following the Adding a System [Access Token guide](https://docs.loginvsi.com/login-enterprise/6.2/using-the-public-api#id-(6.2)UsingthePublicAPI-adding-a-system-access-tokenAddingaSystemAccessToken)
 --Then store it in Secure Field 1 of your test account configuration
---The `{secure1}` variable will be replaced with your API key at runtime
+--The `{securecustom1}` variable will be replaced with your API key at runtime
 - `--applianceurl`: Replace with your actual Login Enterprise appliance URL
 - `--scripts-path`: Update to point to your actual script location
 
